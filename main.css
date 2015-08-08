@@ -1,0 +1,145 @@
+@import url(http://fonts.googleapis.com/css?family=Cuprum:400,700|Roboto+Slab:400,100,300,700);
+
+body {
+  padding-top: 50px;
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 300;
+  font-size: 1.8em;
+  position: relative;
+  text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Cuprum", sans-serif;
+  font-weight: 100;
+  margin: 0;
+}
+/*Header*/
+#logo {
+  max-height: 50px;
+  margin-top: -15px;
+}
+
+.navbar {
+  border-radius: 0;
+}
+
+header .navbar-nav {
+  margin-top: 0;
+}
+
+header .navbar-inverse .navbar-nav li a {
+  color: #EEC856;
+  padding-left: 4px;
+}
+
+header .navbar-inverse .navbar-nav .active a {
+  padding-bottom: 11px;
+  background-color: rgba(0,0,0, 0.7);
+  border-bottom: 4px solid rgba(238,200,86, 0.4);
+}
+
+header .navbar-inverse .navbar-toggle .icon-bar {
+  background-color: #EEC856;
+}
+
+header .container .navbar-header {
+  background-color: #222;
+}
+
+/*Media query to apply class until screen exceeds 768px*/
+@media only screen
+and (max-width: 768px) {
+  header .navbar-inverse {
+    background-color: rgba(0,0,0, 0.5);
+  }
+}
+
+/*Main*/
+@media only screen
+and (min-width: 450px)
+and (max-width: 768px) {
+  .main .page {
+    padding: 0 20%;
+  }
+}
+
+.main .page {
+  padding: 50px 2%;
+}
+
+.main .page p {
+  text-align: justify;
+}
+
+.main .page li {
+  text-align: left;
+}
+
+footer .navbar-default {
+  border: none;
+  background: transparent;
+}
+
+.page {
+  text-align: center;
+  padding: 50px 0;
+}
+
+/*Mission*/
+#mission {
+  background-color: #EEC856;
+  background-image: linear-gradient(to bottom, #EEC856, #FFF);
+}
+
+/*Infuences*/
+.main blockquote {
+  border-left: none;
+}
+
+#influences {
+  background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(images/stars.jpg);
+  background-position: center top;
+  background-size: cover;
+}
+
+#influences .influence p, #influences .influence .idol{
+  color: #FFF;
+  font-weight: 500;
+  font-size: 1.5em;
+}
+
+#influences .influence .more, #influences .influence .idol {
+  opacity: 0;
+  font-size: 0;
+  line-height: 0;
+  padding-top: 10px;
+}
+
+#influences .influence .intro::after {
+  content: '...';
+}
+
+#influences .influence:hover .intro::after {
+  content: '';
+}
+
+#influences .influence:hover .more {
+  font-family: "Roboto Slab", "Open Sans", sans-serif;
+  font-weight: 500;
+  display: block;
+  opacity: 1;
+  font-size: 1em;
+  line-height: 120%;
+  padding-top: 0;
+}
+
+#influences .influence:hover .idol {
+  font-family: "Roboto Slab", "Open Sans", sans-serif;
+  font-weight: 500;
+  display: block;
+  opacity: 1;
+  font-size: 1.5em;
+  line-height: 120%;
+  text-align: right;
+}
