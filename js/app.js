@@ -9,7 +9,7 @@ $(function() {
 
    $('.fullheight').css('height', wheight);
 
-   //Replace ig inside carousels with a backgroun image
+   //Replace IMG inside carousels with a backgroun image
 
    $('#featured .item img').each(function() {
      var imgSrc = $(this).attr('src');
@@ -22,6 +22,9 @@ $(function() {
      wheight = $(window).height();
      $('.fullheight').css('height', wheight);
    });
+
+   //Remove carousel captions
+  //  $('#featured .carousel-caption div').remove();
 
    //Activate Scrollspy
    $('body').scrollspy({
@@ -71,7 +74,8 @@ $(function() {
 
    //Sets the carousel to pause upon hover and time interval
    $('.carousel').carousel({
-       pause: "hover",
+      //  pause: "hover"
+      pause: "hover",
        interval: 7000
    });
 });
